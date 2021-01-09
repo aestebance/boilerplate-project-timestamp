@@ -47,8 +47,8 @@ app.get("/api/timestamp/:date", function(req, res) {
 });
 
 
-
+const PORT = process.env.PORT || 3000
 // listen for requests :)
-var listener = app.listen(80, function () {
+var listener = app.listen(PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
